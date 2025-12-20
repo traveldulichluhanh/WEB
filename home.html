@@ -1,0 +1,161 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website Du Lịch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary "
+        style="background-color: rgb(205, 249, 222); position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; align-items: center;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" title="Logo" src="" style="width: 200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#index.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="home">Trang Chủ </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#about" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="about">Giới Thiệu </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#tours" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="tours">Tour Du lịch </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Phú Quốc</a></li>
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Nha Trang</a></li>
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Đà Nẵng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#contact" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="contact">Liên hệ</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <select id="language" style=" background-color: rgb(205, 249, 222); border-radius: 10px; width: 10px; height: 30px; text-align: center; ">
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <section id="home" class="section">
+        <article class="row">
+            <div class="col-md-9 p-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button> -->
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="img/danang.jpg" class="d-block w-100">
+                           
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/phuquoc.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/tp-nha-trang.webp" class="d-block w-100">
+                        </div>
+                        <!-- <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/banner-spr-1.png.webp" class="d-block w-100">
+                        </div> -->
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+    <section id="about" class="section">
+        <h2 data-key="aboutTitle">Giới thiệu</h2>
+        <p data-key="aboutText">
+            Chúng tôi cung cấp các tour du lịch chất lượng, giá tốt và dịch vụ chuyên nghiệp.
+        </p>
+    </section>
+
+    <section id="tours" class="section">
+        <h2 data-key="tourTitle">Tour du lịch</h2>
+        <div class="tour-list">
+            <div class="tour">
+                <h3 data-key="tour1">Tour Đà Nẵng</h3>
+                <p data-key="tour1Desc">3 ngày 2 đêm - Giá từ 3.000.000đ</p>
+            </div>
+            <div class="tour">
+                <h3 data-key="tour2">Tour Phú Quốc</h3>
+                <p data-key="tour2Desc">4 ngày 3 đêm - Giá từ 5.000.000đ</p>
+            </div>
+        </div>
+    </section>
+    <section id="tintuc" class="section">
+        <h2 data-key="tourTitle">Tour du lịch</h2>
+        <div class="tour-list">
+            <div class="tour">
+                <h3 data-key="tour1">Tour Đà Nẵng</h3>
+                <p data-key="tour1Desc">3 ngày 2 đêm - Giá từ 3.000.000đ</p>
+            </div>
+            <div class="tour">
+                <h3 data-key="tour2">Tour Phú Quốc</h3>
+                <p data-key="tour2Desc">4 ngày 3 đêm - Giá từ 5.000.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 data-key="contactTitle">Liên hệ</h2>
+        <p>Email: traveltour@gmail.com</p>
+        <p>Hotline: 0909 999 999</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Travel Tour</p>
+    </footer>
+    <script src="angularJS/angular.min.js"></script>
+    <script src="angularJS/angular-route.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    >
+</body>
+
+</html>

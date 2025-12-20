@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0a6cf1;
+    color: #fff;
+} */
+
+
+    nav a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* nav a:hover {
+        text-decoration: underline;
+    } */
+
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background: #f4f4f4;
+}
+
+/* .tour-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tour {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+/* } */
+
+/* Tour detail */
+.tour-img {
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.tour-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tour-desc {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tour-info {
+  list-style: none;
+  padding: 0;
+}
+
+.tour-info li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.tour-price {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.tour-price span {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Schedule */
+.schedule-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.img {
+    position: relative;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+.section-home-featues{
+    background-color: #fde9f0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+}
+
+.dropdown-menu>.dropdown-item {
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+select {
+    appearance: none;          /* Chuẩn */
+    -webkit-appearance: none;  /* Chrome, Safari */
+    -moz-appearance: none;     /* Firefox */
+    background-image: none;    /* Xóa icon nền */
+}
+
+/* Select trùng ảnh nền */
+.language {
+  background: rgba(0, 0, 0, 0.35);   /* trong suốt */
+  backdrop-filter: blur(6px);        /* mờ nền */
+  color: #fff;                       /* chữ trắng */
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 10px;
+  padding: 4px 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Hover */
+.language:hover {
+  background: rgba(193, 193, 193, 0.55);
+}
+
+.footer {
+  background: linear-gradient(180deg, #0b2545, #020c1b);
+  color: #d1d5db;
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #d1d5db;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #00ffcc;
+  padding-left: 5px;
+}
+
+.footer p {
+  margin-bottom: 8px;
+}
+
+.footer input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.footer input::placeholder {
+  color: #ccc;
+}
+
+.footer-bottom {
+  background: rgba(0,0,0,0.3);
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+/* Dropdown glass effect */
+.glass-dropdown {
+  background:   rgba(232, 140, 140, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+
+  padding: 10px 0;
+  min-width: 240px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Item trong dropdown */
+.glass-dropdown .dropdown-item {
+  color: #2f2a2a;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Hover item */
+.glass-dropdown .dropdown-item:hover {
+  background: rgba(255,255,255,0.2);
+  color: #00ffcc;
+  padding-left: 26px;
+}
+
+/* ===== TRẠNG THÁI BAN ĐẦU (TRÊN ẢNH) ===== */
+.hero-navbar {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.hero-navbar .nav-link,
+.hero-navbar .navbar-brand {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+/* ===== KHI SCROLL ===== */
+.hero-navbar.scrolled {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.hero-navbar.scrolled .nav-link,
+.hero-navbar.scrolled .navbar-brand {
+  color: #000 !important;
+}
+
+/* Hover */
+.hero-navbar.scrolled .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.hero-navbar.scrolled #language {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.hero-navbar #language {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+

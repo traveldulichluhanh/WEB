@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Du Lịch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/bootstrap-icons.css">
+    <style>
+        .carousel,
+        .carousel-item,
+        .carousel-item img {
+            height: 100vh;
+            /* full chiều cao màn hình */
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            /* không méo ảnh */
+        }
+
+        /* chữ trên slider */
+        .carousel-caption {
+            bottom: 40%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- //Trang Chủ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary hero-navbar"
+        style=" position: fixed; width: 100%; z-index: 1000; align-items: center;">
+        <div class="container-fluid">
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" title="Logo" src="img/Logo.png" style="width: 65px;">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="index.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="home" style="color: rgb(255, 255, 255);">Trang Chủ </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="gioithieu.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="about" style="color: rgb(255, 255, 255);">Giới Thiệu
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#tours" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="tours" style="color: rgb(255, 255, 255);">Tour Du lịch
+                        </a>
+                        <!-- <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Phú Quốc</a></li>
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Nha Trang</a></li>
+                            <li><a class="dropdown-item" href="#">Tour Du Lịch Đà Nẵng</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#contact" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-key="contact" style="color: rgb(255, 255, 255);">Liên hệ</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <select id="language" class="language"
+                style="border-radius: 10px; width: 100px; height: 30px; text-align: center; ">
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+    </nav>
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <!-- <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button> -->
+
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner" data-bs-interval="1000">
+                <div class="carousel-item active">
+                    <img src="img/anh1.jpg" class="d-block w-100"
+                        alt="">
+                    <div class="carousel-caption text-center">
+                        <h1 style="font-weight: bold;">CHÂN TRỜI VIỆT</h1>
+                        <p >Khởi nguồn hành trình - Trải nghiệm vượt giới hạn</p>
+                        <!-- <a href="#tours" class="btn btn-primary">Xem Tour</a> -->
+                    </div>
+                </div>
+
+
+                <div class="carousel-item ">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100"
+                        alt="">
+                    <div class="carousel-caption text-center">
+                        <h1 data-key="slide1_title">Khám Phá Phú Quốc</h1>
+                        <p data-key="slide1_desc">Thiên đường nghỉ dưỡng biển đảo</p>
+                        <!-- <a href="#tours" class="btn btn-primary">Xem Tour</a> -->
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="d-block w-100"
+                        alt="">
+                    <div class="carousel-caption text-center">
+                        <h1 data-key="slide3_title">Nha Trang Biển Gọi</h1>
+                        <p data-key="slide3_desc">Hành trình không thể bỏ lỡ</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- //Nội dung -->
+
+    <div class="container">
+        <!-- //thông tin -->
+        <h1 class="tour-title" style="text-align: center; font-size: 35px; margin: 25px 0;" data-key="tournoibat">Tour
+            Du Lịch Nổi Bật</h1>
+        <section class="tour-detail py-5">
+
+
+
+            <div class="row g-4">
+
+                <!-- Ảnh tour -->
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="img-fluid tour-img"
+                        alt="Tour Phú Quốc">
+                </div>
+
+                <!-- Nội dung -->
+                <div class="col-lg-6">
+                    <h2 class="tour-title" data-key="dulich1">Du Lịch Phú Quốc 3 Ngày 2 Đêm</h2>
+                    <p class="tour-desc" data-key="nd1">
+                        Khám phá đảo ngọc Phú Quốc với biển xanh, cát trắng và những điểm đến nổi tiếng.
+                    </p>
+
+                    <ul class="tour-info">
+                        <li data-key="ma"><strong>🎫Mã Tour:</strong> NDHGF320</li>
+                        <li data-key="time"><strong>⏱ Thời gian:</strong> 3 ngày 2 đêm</li>
+                        <li data-key="phuongtien"><strong>✈️ Phương tiện:</strong> Máy bay</li>
+                        <li data-key="khachsan"><strong>🏨 Khách sạn:</strong> 4 - 5 sao ( Vin Osis)</li>
+                        <li data-key="thoihan"> <strong>📅 Thời hạn:</strong> 12 tháng/ Voucher</li>
+                    </ul>
+
+                    <div data-key="Gia" class="tour-price">
+                        Giá tour: <span>11.990.000 VND hoặc MIỄN PHÍ khi đăng kí ngay tại Fanpage.</span>
+                    </div>
+
+                    <a class="btn btn-primary mt-3" data-key="book_now">Đặt tour ngay</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="tour-detail py-5">
+
+            <div class="row g-4">
+
+                <!-- Ảnh tour -->
+                <div class="col-lg-6">
+                    <img src="img/da-nang2.jpg" class="img-fluid tour-img" alt="Tour Đà Nẵng">
+                </div>
+
+                <!-- Nội dung -->
+                <div class="col-lg-6">
+                    <h2 class="tour-title" data-key="dulich2">Du Lịch Đà Nẵng 4 Ngày 3 Đêm</h2>
+                    <p class="tour-desc" data-key="nd2">
+                        Trải nghiệm Đà Nẵng với bãi biển Mỹ Khê tuyệt đẹp, ghé thăm BaNa Hills, thiên nhiên hài hòa và
+                        những công trình biểu tượng. </p>
+
+                    <ul class="tour-info">
+                        <li data-key="ma2"><strong>🎫Mã Tour:</strong> NDHGF322</li>
+                        <li data-key="time2"><strong>⏱ Thời gian:</strong> 4 ngày 3 đêm</li>
+                        <li data-key="phuongtien2"><strong>✈️ Phương tiện:</strong> Máy bay</li>
+                        <li data-key="khachsan2"><strong>🏨 Khách sạn:</strong> 4 - 5 sao (Mikazuki)</li>
+                        <li data-key="thoihan2"><strong>📅 Thời hạn:</strong> 12 tháng/ Voucher</li>
+                    </ul>
+
+                    <div class="tour-price" data-key="Gia2">
+                        Giá tour: <span>15.990.000 VND hoặc MIỄN PHÍ khi đăng kí ngay tại Fanpage.</span>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary mt-3" data-key="book_now">Đặt tour ngay</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="tour-detail py-5">
+            <div class="row g-4">
+
+                <!-- Ảnh tour -->
+                <div class="col-lg-6">
+                    <img src="img/nha trang1.webp" class="img-fluid tour-img" alt="Tour Nha Trang">
+                </div>
+
+                <!-- Nội dung -->
+                <div class="col-lg-6">
+                    <h2 class="tour-title" data-key="dulich3">Du Lịch Nha Trang 3 Ngày 2 Đêm</h2>
+                    <p class="tour-desc" data-key="nd3">
+                        Trải nghiệm Nha Trang với làn nước biển trong xanh, bãi cát trắng mịn và thiên đường nghỉ dưỡng
+                        hàng đầu Việt Nam. </p>
+
+                    <ul class="tour-info">
+                        <li data-key="ma3"><strong>🎫Mã Tour:</strong> NDHGF320</li>
+                        <li data-key="time3"><strong>⏱ Thời gian:</strong> 3 ngày 2 đêm</li>
+                        <li data-key="phuongtien3"><strong>✈️ Phương tiện:</strong> Máy bay</li>
+                        <li data-key="khachsan3"><strong>🏨 Khách sạn:</strong> 4 - 5 sao ( Diamond Bay)</li>
+                        <li data-key="thoihan3"><strong>📅 Thời hạn:</strong> 12 tháng/ Voucher</li>
+                    </ul>
+
+                    <div class="tour-price" data-key="Gia3">
+                        Giá tour: <span>10.990.000 VND hoặc MIỄN PHÍ khi đăng kí ngay tại Fanpage</span>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary mt-3" data-key="book_now">Đặt tour ngay</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- // footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row gy-4">
+
+                <!-- Cột 1: Logo + giới thiệu -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/Logo.png" alt="Logo" style="width:150px;" class="mb-3">
+                    <p data-key="ck">
+                        Chuyên cung cấp tour du lịch trong và ngoài nước,
+                        mang đến trải nghiệm tuyệt vời cho mọi hành trình.
+                    </p>
+                </div>
+
+                <!-- Cột 2: Menu -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 data-key="lienket">Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" data-key="home">Trang chủ</a></li>
+                        <li><a href="#about" data-key="about">Giới thiệu</a></li>
+                        <li><a href="#tours" data-key="tours">Tour du lịch</a></li>
+                        <li><a href="#contact" data-key="contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Liên hệ -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-key="contact">Liên hệ</h5>
+                    <p>📍 Hồ Chí Minh, Việt Nam</p>
+                    <p>📞 +84 76 487 3200</p>
+                    <p>✉️ Page: Lữ Hành Chân Trời Việt </p>
+                </div>
+
+                <!-- Cột 4: Form -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 data-key="ndd">Nhận ưu đãi</h5>
+                    <form>
+                        <input type="email" class="form-control mb-2" data-key="email" placeholder="Email của bạn">
+                        <button class="btn btn-primary w-100" data-key="dk">Đăng ký</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom
+  <div class="footer-bottom text-center py-3">
+    © 2025 Travel Website | Thiết kế bởi Xuân Cường
+  </div> -->
+    </footer>
+
+
+    <script src="angularJS/angular.min.js"></script>
+    <script src="angularJS/angular-route.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
