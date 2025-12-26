@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+
 }
 /* 
 header {
@@ -288,3 +290,6 @@ select {
   color: #fff;
 }
 
+.sectionn {
+  scroll-margin-top: 90px; /* bằng chiều cao navbar */
+}
